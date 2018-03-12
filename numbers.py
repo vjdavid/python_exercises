@@ -1,6 +1,11 @@
 #Victor David Jarillo Davila
 
-for number in range(1, 3):
-    for holis in range(0, number):
+default_value = True
+
+for number in range(1, 51):
+    if default_value:
         print("Interno: {}".format(number))
-    print("\tExterno: {}".format(number))
+        default_value = False
+    else:
+        print("\tExterno: {}".format(number))
+        default_value = True
